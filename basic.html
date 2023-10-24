@@ -17,9 +17,22 @@
         background-color: rgb(140, 155, 8);
       }
       .gradient {
-        width: 400px;
-        height: 400px;
-        background: linear-gradient(45deg, rgb(0, 68, 255), rgb(111, 0, 255));
+        width: auto;
+        height: 90px;
+        background: linear-gradient(45deg, rgb(0, 68, 255), rgb(111, 0, 255),#035063,#86bbae);
+        background-size:600% 600%;
+        animation:gradientBG 5s ease infinite
+      }
+      @keyframes gradientBG{
+        0%{
+            background-position:0% 50%
+        }
+        50%{
+            background-position:100% 50%
+        }
+        100%{
+            background-position:0% 50%
+        }
       }
       .border {
         border: 2px solid black;
